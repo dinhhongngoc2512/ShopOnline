@@ -1,0 +1,217 @@
+﻿
+@{
+    ViewBag.Title = "_MainLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by 365Bootstrap dot com - Free Responsive Html5 Templates">
+    @*<meta name="author" content="http://www.365bootstrap.com">*@
+
+    <title>Mobile Shop</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="~/Asset/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Asset/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="~/Asset/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Asset/fonts/font-slider.css" type="text/css">
+
+    <!-- jQuery and Modernizr-->
+    <script src="~/Asset/js/jquery-2.1.1.js"></script>
+
+    <!-- Core JavaScript Files -->
+    <script src="~/Asset/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--Top-->
+    <nav id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <select class="language">
+                        <option value="Vietnamese" selected>Vietnamese</option>
+                        <option value="English" >English</option>
+                        
+                    </select>
+                    <select class="currency">
+                        <option value="VND" selected>VND</option>
+                        <option value="USD" >USD</option>
+                        
+                    </select>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="top-link">
+                        <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> Tài khoản</a></li>
+                        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Hộp thư</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Header-->
+    <header class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="logo"><img src="~/Asset/images/logo.png" /></div>
+            </div>
+            <div class="col-md-4">
+                <form class="form-search">
+                    <input type="text" class="input-medium search-query">
+                    <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div id="cart"><a class="btn btn-1" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>CART : 0 ITEM</a></div>
+            </div>
+        </div>
+    </header>
+    <!--Navigation-->
+    <nav id="menu" class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <span id="heading" class="visible-xs">Thê loại</span>
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Trang Chủ","Index","Home")</li>
+                    <li class="dropdown">
+                        @Html.ActionLink("Sản Phẩm","Index","Shop")
+                        <div class="dropdown-menu">
+                            <div class="dropdown-inner">
+                                <ul class="list-unstyled">
+                                    <li><a href="category.html">Window</a></li>
+                                    <li><a href="category.html">MacBook</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Máy Tính</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-inner">
+                                <ul class="list-unstyled">
+                                    <li><a href="category.html">Dell</a></li>
+                                    <li><a href="category.html">Asus</a></li>
+                                    <li><a href="category.html">Samsung</a></li>
+                                    <li><a href="category.html">Lenovo</a></li>
+                                    <li><a href="category.html">Acer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Điện Thoại &amp; Máy tính bảng</a>
+                        <div class="dropdown-menu" style="margin-left: -203.625px;">
+                            <div class="dropdown-inner">
+                                <ul class="list-unstyled">
+                                    <li><a href="category.html">Iphone</a></li>
+                                    <li><a href="category.html">Samsung</a></li>
+                                    <li><a href="category.html">Nokia</a></li>
+                                    <li><a href="category.html">Lenovo</a></li>
+                                    <li><a href="category.html">Google</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="category.html">Nexus</a></li>
+                                    <li><a href="category.html">Dell</a></li>
+                                    <li><a href="category.html">Oppo</a></li>
+                                    <li><a href="category.html">Blackberry</a></li>
+                                    <li><a href="category.html">HTC</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="category.html">LG</a></li>
+                                    <li><a href="category.html">Xiaomi</a></li>
+                                    <li><a href="category.html">Sony</a></li>
+                                    <li><a href="category.html">OnePlus</a></li>
+                                    <li><a href="category.html">Oppo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="category.html">Hỗ trợ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--//////////////////////////////////////////////////-->
+    <!--///////////////////HomePage///////////////////////-->
+    <!--//////////////////////////////////////////////////-->
+    @RenderBody()
+    <footer>
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="row">
+                    <div class="col-md-3 col-footer footer-1">
+                        <img src="~/Asset/images/logofooter.png" />
+                        <p>Pc Phone hệ thống máy tính, điện thoại thông minh, máy tính bảng xách tay uy tín, bảo hành tốt nhất Việt Nam.</p>
+                    </div>
+                    <div class="col-md-3 col-footer footer-2">
+                        <div class="heading"><h4>Quy định & Chính sách</h4></div>
+                        <ul>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng Online</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-3">
+                        <div class="heading"><h4>Tài khoản</h4></div>
+                        <ul>
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><a href="#">Thương Hiệu</a></li>
+                            <li><a href="#">Quà tặng</a></li>
+                            <li><a href="#">Khuyến mãi</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-4">
+                        <div class="heading"><h4>Liên hệ</h4></div>
+                        <ul>
+                            <li><span class="glyphicon glyphicon-home"></span>Số 123 - Phường Thịnh Lang, Thành Phố Hòa Bình</li>
+                            <li><span class="glyphicon glyphicon-earphone"></span>+84 968686868</li>
+                            <li><span class="glyphicon glyphicon-envelope"></span>contacts@pcphone.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        Copyringt © 2017 - PcPhone <a href="Hệ thống bán lẻ di động" rel="nofollow" target="_blank">Hệ thống bán lẻ di động</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pull-right">
+                            <ul>
+                                <li><img src="~/Asset/images/visa-curved-32px.png" /></li>
+                                <li><img src="~/Asset/images/paypal-curved-32px.png" /></li>
+                                @*<li><img src="~/Asset/images/discover-curved-32px.png" /></li>*@
+                                <li><img src="~/Asset/images/maestro-curved-32px.png" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="heading"><h2>Sản phẩm nổi bật</h2></div>
+        <div class="products">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="product">
+                    <div class="image"><a href="@Url.Action("Details", new { id = 1})"><img src="~/Asset/images/iphone7.jpg" /></a></div>
+                    <div class="buttons">
+                        <a class="btn cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                        <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                    </div>
+                    <div class="caption">
+                        <div class="name"><h3><a href="product.html">iPhone 7</a></h3></div>
+                        <div class="price">18.790.000đ</div>
+                        <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="product">
+                    <div class="image"><a href="product.html"><img src="~/Asset/images/galaxy-note5.jpg" /></a></div>
+                    <div class="buttons">
+                        <a class="btn cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                        <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                    </div>
+                    <div class="caption">
+                        <div class="name"><h3><a href="product.html">SamSung Galaxy Note 5</a></h3></div>
+                        <div class="price">12.490.000đ</div>
+                        <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="product">
+                    <div class="image"><a href="product.html"><img src="~/Asset/images/sony-z5.jpg" /></a></div>
+                    <div class="buttons">
+                        <a class="btn cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                        <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                    </div>
+                    <div class="caption">
+                        <div class="name"><h3><a href="product.html">Sony Xperia Z5</a></h3></div>
+                        <div class="price">10.990.000đ<</div>
+                        <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="product">
+                    <div class="image"><a href="product.html"><img src="~/Asset/images/lg-g6.jpg" /></a></div>
+                    <div class="buttons">
+                        <a class="btn cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                        <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                        <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                    </div>
+                    <div class="caption">
+                        <div class="name"><h3><a href="product.html">LG G6</a></h3></div>
+                        <div class="price">16.450.000đ</div>
+                        <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
